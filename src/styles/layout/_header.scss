@@ -1,0 +1,19 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+.page-header {
+  background-color: vars.$deep_blue;
+  height: 100vh;
+  h1 {
+    @include mix.heading(true);
+  }
+  h2 {
+    @include mix.heading;
+  }
+  .primary-button {
+    @include mix.button(true);
+  }
+  button {
+    @include mix.button;
+  }
+}
